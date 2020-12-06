@@ -4,7 +4,6 @@ require_relative './part_1_solution.rb'
 def find_item_by_name_in_collection(name, collection)
   
   collection.each do |grocery_item|
-    binding.pry
     return grocery_item if grocery_item[:item] === name 
 
   end
