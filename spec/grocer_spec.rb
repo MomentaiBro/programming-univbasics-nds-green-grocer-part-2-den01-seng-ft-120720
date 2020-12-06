@@ -80,6 +80,7 @@ describe "Grocer" do
         item_name = "AVOCADO"
         item_with_coupon_applied_name = "#{item_name} W/COUPON"
         avocado = find_item_by_name_in_collection(item_name, items)
+        # {:item => "AVOCADO", :num => 2, :cost => 5.00}
         avocado_coupon = coupons.first
         perfect_avocado_cart = [ avocado, avocado ]
         consolidated_cart = consolidate_cart(perfect_avocado_cart)
